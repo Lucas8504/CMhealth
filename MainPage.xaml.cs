@@ -2,6 +2,10 @@
 {
     public partial class MainPage : ContentPage
     {
+
+        const double UnderWeigthThreshold = 18.5;
+        const double NormalWeigthThreshold = 24.9;
+        const double OverWeigthThreshold = 29.9;
       
 
         public MainPage()
