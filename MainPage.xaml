@@ -5,7 +5,10 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     BackgroundColor="#181818">
 
-    <VerticalStackLayout VerticalOptions="Center" Spacing="25" Margin="10">
+    <VerticalStackLayout
+        Margin="10"
+        Spacing="25"
+        VerticalOptions="Center">
 
         <Label
             FontAttributes="Bold"
@@ -13,26 +16,35 @@
             HorizontalTextAlignment="Center"
             Text="CM Health"
             TextColor="#cccccc" />
-        
+
         <Entry
+            x:Name="Weigth"
             BackgroundColor="#2a2a2a"
             Placeholder="Tu peso en Kg.(ej: 75.5)"
             PlaceholderColor="#7d7c7c"
             TextColor="#cccccc" />
-        
+
         <Entry
+            x:Name="Heigth"
             BackgroundColor="#2a2a2a"
             Placeholder="Tu altura en Mts.(ej: 1.75)"
             PlaceholderColor="#7d7c7c"
             TextColor="#cccccc" />
-        
+
         <Entry
+            x:Name="Mch"
             BackgroundColor="#2a2a2a"
             Placeholder="Tu masa corporal."
             PlaceholderColor="#7d7c7c"
             TextColor="#cccccc" />
-        
-        <Button BackgroundColor="#0078d4" Text="Calcular"  TextColor="#cccccc" FontAttributes="Bold" FontSize="22"/>
+
+        <Button
+            BackgroundColor="#0078d4"
+            FontAttributes="Bold"
+            FontSize="22"
+            Text="Calcular"
+            TextColor="#cccccc" Clicked="Button_Clicked"
+            />
 
     </VerticalStackLayout>
 
