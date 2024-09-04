@@ -24,6 +24,29 @@
             Mch.Text = mch.ToString("F2");
 
         }
+
+        private string GetMcResultMessaje(double mch)
+        {
+
+            if (mch < UnderWeigthThreshold)
+            {
+                return "Estas con bajo peso";
+            }
+            if (mch < NormalWeigthThreshold)
+            {
+                return "Tu peso es normal";
+            }
+            if (mch < UnderWeigthThreshold)
+            {
+                return "Estas con sobre peso";
+            }
+            else
+            {
+                return "Tienes obesidad, consulta a tu medico";
+            }
+
+        }
+
     }
 
 }
