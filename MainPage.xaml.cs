@@ -23,6 +23,9 @@
 
             Mch.Text = mch.ToString("F2");
 
+            string result = GetMcResultMessaje(mch);
+            DisplayAlert("Resultado",result, "Ok");
+
         }
 
         private string GetMcResultMessaje(double mch)
