@@ -35,13 +35,13 @@
             {
                 return "Estas con bajo peso";
             }
-            if (mch < NormalWeigthThreshold)
+            if (mch <= NormalWeigthThreshold)
             {
                 return "Tu peso es normal";
             }
-            if (mch < UnderWeigthThreshold)
+            if (mch <= OverWeigthThreshold)
             {
-                return "Estas con sobre peso";
+                return "Estas con sobrepeso";
             }
             else
             {
