@@ -20,6 +20,7 @@
         <Entry
             x:Name="Weigth"
             BackgroundColor="#2a2a2a"
+            Keyboard="Numeric"
             Placeholder="Tu peso en Kg.(ej: 75.5)"
             PlaceholderColor="#7d7c7c"
             TextColor="#cccccc" />
@@ -27,6 +28,7 @@
         <Entry
             x:Name="Heigth"
             BackgroundColor="#2a2a2a"
+            Keyboard="Numeric"
             Placeholder="Tu altura en Mts.(ej: 1.75)"
             PlaceholderColor="#7d7c7c"
             TextColor="#cccccc" />
@@ -34,17 +36,18 @@
         <Entry
             x:Name="Mch"
             BackgroundColor="#2a2a2a"
+            IsEnabled="False"
             Placeholder="Tu masa corporal."
             PlaceholderColor="#7d7c7c"
             TextColor="#cccccc" />
 
         <Button
             BackgroundColor="#0078d4"
+            Clicked="Button_Clicked"
             FontAttributes="Bold"
             FontSize="22"
             Text="Calcular"
-            TextColor="#cccccc" Clicked="Button_Clicked"
-            />
+            TextColor="#cccccc" />
 
     </VerticalStackLayout>
 
