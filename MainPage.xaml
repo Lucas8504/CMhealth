@@ -10,7 +10,7 @@
         Spacing="25"
         VerticalOptions="Center">
 
-        <Label
+        <Label Margin="30"
             FontAttributes="Bold"
             FontSize="30"
             HorizontalTextAlignment="Center"
@@ -48,6 +48,14 @@
             FontSize="22"
             Text="Calcular"
             TextColor="#cccccc" />
+
+        <Label Margin="20"
+            FontAttributes="None"
+            FontSize="10"
+            HorizontalTextAlignment="Center"
+            Text="Lu´Ks.dev"
+            TextColor="#7d7c7c"
+            HorizontalOptions="End" />
 
     </VerticalStackLayout>
 
