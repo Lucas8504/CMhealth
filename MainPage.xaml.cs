@@ -21,7 +21,7 @@
 
             var mch = weigth / (heigth * heigth);
 
-            Mch.Text = mch.ToString("F2");
+            Mch.Text = mch.ToString(format: "F2");
 
             string result = GetMcResultMessaje(mch);
             DisplayAlert("Resultado",result,"Ok");
