@@ -10,36 +10,50 @@
         Spacing="25"
         VerticalOptions="Center">
 
+
+
         <Label Margin="30"
-            FontAttributes="Bold"
-            FontSize="30"
-            HorizontalTextAlignment="Center"
-            Text="CM Health"
-            TextColor="#cccccc" />
+               FontAttributes="Bold"
+               FontSize="30"
+               HorizontalTextAlignment="Center"
+               Text="CM Health"
+               TextColor="#cccccc" />
 
-        <Entry
-            x:Name="Weigth"
-            BackgroundColor="#2a2a2a"
-            Keyboard="Numeric"
-            Placeholder="Tu peso en Kg.(ej: 75.5)"
-            PlaceholderColor="#7d7c7c"
-            TextColor="#cccccc" />
 
-        <Entry
-            x:Name="Heigth"
+        <Frame
             BackgroundColor="#2a2a2a"
-            Keyboard="Numeric"
-            Placeholder="Tu altura en Mts.(ej: 1.75)"
-            PlaceholderColor="#7d7c7c"
-            TextColor="#cccccc" />
+            CornerRadius="12"
+            Padding="10"
+            HasShadow="False">
 
-        <Entry
-            x:Name="Mch"
+            <Entry
+                x:Name="Weigth"
+                BackgroundColor="#2a2a2a"
+                Keyboard="Numeric"
+                Placeholder="Tu peso en Kg.(ej: 75.5)"
+                PlaceholderColor="#7d7c7c"
+                TextColor="#cccccc"
+                />
+
+        </Frame>
+
+        <Frame
             BackgroundColor="#2a2a2a"
-            IsEnabled="False"
-            Placeholder="Tu masa corporal."
-            PlaceholderColor="#7d7c7c"
-            TextColor="#cccccc" />
+            CornerRadius="12"
+            Padding="10"
+            HasShadow="False">
+
+            <Entry
+                x:Name="Heigth"
+                BackgroundColor="#2a2a2a"
+                Keyboard="Numeric"
+                Placeholder="Tu altura en Mts.(ej: 1.75)"
+                PlaceholderColor="#7d7c7c"
+                TextColor="#cccccc"/>
+
+        </Frame>
+
+
 
         <Button
             BackgroundColor="#0078d4"
@@ -49,13 +63,31 @@
             Text="Calcular"
             TextColor="#cccccc" />
 
+
+
+        <Frame
+            BackgroundColor="#2a2a2a"
+            CornerRadius="12"
+            Padding="10"
+            HasShadow="False">
+
+            <Entry
+                x:Name="Mch"
+                BackgroundColor="#2a2a2a"
+                IsEnabled="False"
+                Placeholder="Tu masa corporal."
+                PlaceholderColor="#7d7c7c"
+                TextColor="#cccccc" />
+
+        </Frame>
+
         <Label Margin="20"
-            FontAttributes="None"
-            FontSize="10"
-            HorizontalTextAlignment="Center"
-            Text="Lu´Ks.dev"
-            TextColor="#7d7c7c"
-            HorizontalOptions="End" />
+               FontAttributes="None"
+               FontSize="10"
+               HorizontalTextAlignment="Center"
+               Text="Lu´Ks.dev"
+               TextColor="#7d7c7c"
+               HorizontalOptions="End" />
 
     </VerticalStackLayout>
 
